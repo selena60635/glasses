@@ -1,0 +1,20 @@
+.filter {
+  &-option {
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+    a {
+      padding: 13px 0;
+      &:hover {
+        color: $light-10;
+      }
+    }
+  }
+  .icon {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  @include phone {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+@import "./base/reset";
+@import "./utils/variables";
+@import "./base/fontStyle";
+@import "./utils/mixin";
+@import "./utils/flex";
+@import "./utils/background";
+@import "./utils/container";
+@import "./utils/text";
+@import "./components/productNav";
+@import "./layout/navbar.scss";
+@import "./layout/footer.scss";
+@import "./layout/pagination";
+@import "./layout/filternav";
+@import "./pages/index.scss";
+@import "./pages/productOptical";
+@import "./pages/productSunglasses";
+@import "./pages/shop";
+@import "./pages/shopItem";
+@import "./pages/faq";
+@import "./pages/blog";
+@import "./pages/blogcontent";
+// * {
+//   outline: 1px solid blue;
+// }

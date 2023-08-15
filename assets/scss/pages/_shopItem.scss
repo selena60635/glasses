@@ -1,0 +1,67 @@
+.shop {
+  &-map {
+    margin-top: 40px;
+    gap: 24px;
+    @include pad {
+      flex-direction: column;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  .card {
+    &-m {
+      width: 40.58%;
+      gap: 24px;
+      &-img {
+        @include pad {
+          width: calc((100% - 24px) / 2);
+        }
+        @include phone {
+          width: 100%;
+          min-height: 224px;
+        }
+      }
+      &-info {
+        @include pad {
+          width: calc((100% - 24px) / 2);
+        }
+        @include phone {
+          width: 100%;
+        }
+      }
+      @include pad {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      @include phone {
+        display: block;
+      }
+    }
+    &-title {
+      padding: 8px 24px;
+      border: 1px solid #00000020;
+    }
+    &-info {
+      padding: 16px 24px;
+      border: 1px solid #00000020;
+      .info:not(:first-child) {
+        margin-top: 8px;
+      }
+      .icon {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.map {
+  width: 57.56%;
+  @include pad {
+    width: 100%;
+    min-height: 414px;
+  }
+  @include phone {
+    min-height: 208px;
+  }
+}

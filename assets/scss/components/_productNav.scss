@@ -1,0 +1,26 @@
+.sort {
+  &-btn {
+    width: 33.33%;
+    border: 1px solid $light-10;
+    a {
+      display: block;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 8px solid $light;
+      border-bottom: 8px solid $light;
+      &:hover {
+        border-bottom: 8px solid $primary;
+      }
+      @include pad {
+        padding: 7px 0;
+      }
+    }
+  }
+  @include pad {
+    padding: 0;
+    font-size: 24px;
+  }
+  @include phone {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+@mixin hiddenH1 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-size: 80px 48.57px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+@mixin checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  border: 2px solid $dark;
+  border-radius: 2px;
+  position: relative;
+  &:checked::after {
+    content: "\2713";
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+  }
+  &:checked {
+    background: $dark;
+  }
+}
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phone-s {
+  @media (max-width: 560px) {
+    @content;
+  }
+}

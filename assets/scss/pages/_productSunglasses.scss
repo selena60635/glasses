@@ -1,0 +1,61 @@
+.header-sunglasses {
+  &-left,
+  &-right {
+    width: 50%;
+  }
+  &-left {
+    @include pad {
+      content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+    }
+  }
+  &-right {
+    @include pad {
+      content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+    }
+  }
+}
+.sunglasses {
+  padding: 80px 0;
+  &-title {
+    text-align: center;
+    @include phone {
+      .title {
+        font-size: 24px;
+      }
+    }
+  }
+  &-product {
+    margin: 32px 0 80px 0;
+    gap: 80px 24px;
+    .card {
+      width: calc((100% - 48px) / 3);
+      @include pad {
+        width: calc((100% - 24px) / 2);
+      }
+      @include phone {
+        width: 100%;
+        &:nth-child(n + 6) {
+          display: none;
+        }
+      }
+    }
+    @include pad {
+      gap: 40px 24px;
+    }
+    @include phone {
+      gap: 24px 0px;
+      margin: 24px 0 64px 0;
+    }
+  }
+  @include phone {
+    padding: 40px 0 64px 0;
+  }
+}
+.tint {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

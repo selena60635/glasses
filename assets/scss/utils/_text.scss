@@ -1,0 +1,72 @@
+.text {
+  &-primary {
+    color: $primary;
+  }
+  &-tertiary {
+    color: $tertiary;
+  }
+  &-light {
+    color: $light;
+  }
+  &-dark {
+    color: $dark;
+  }
+  &-gray {
+    color: $gray;
+  }
+  &-gray-10 {
+    color: $gray-10;
+  }
+}
+.fs {
+  &-14 {
+    font-size: 14px;
+  }
+  &-18 {
+    font-size: 18px;
+  }
+  &-19 {
+    font-size: 19px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-24 {
+    font-size: 24px;
+  }
+  &-32 {
+    font-size: 32px;
+  }
+  &-36 {
+    font-size: 36px;
+  }
+  &-40 {
+    font-size: 40px;
+  }
+  &-42 {
+    font-size: 42px;
+  }
+  &-48 {
+    font-size: 48px;
+  }
+  &-64 {
+    font-size: 64px;
+  }
+  &-100 {
+    font-size: 100px;
+  }
+}
+.fw {
+  &-bold {
+    font-weight: bold;
+  }
+  &-500 {
+    font-weight: 500;
+  }
+  &-900 {
+    font-weight: 900;
+  }
+}
+.italic {
+  font-style: italic;
+}

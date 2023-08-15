@@ -1,0 +1,134 @@
+.blog-content {
+  padding: 24px 0 80px 0;
+  &-tags {
+    margin-top: 8px;
+    span {
+      margin-right: 16px;
+    }
+    @include phone {
+      font-size: 16px;
+    }
+  }
+  @include pad {
+    padding: 8px 0 80px 0;
+  }
+  @include phone {
+    padding: 16px 0 64px 0;
+  }
+}
+.article {
+  margin-top: 8px;
+  &-info {
+    width: 66.04%;
+    margin-right: 24px;
+    &-content {
+      margin-top: 8px;
+      @include pad {
+        margin-top: 16px;
+      }
+      @include phone {
+        margin-top: 8px;
+      }
+    }
+    &-img:first-of-type {
+      margin-top: 16px;
+      @include pad {
+        margin-top: 24px;
+      }
+      @include phone {
+        margin-top: 16px;
+      }
+    }
+    &-img:not(:first-of-type) {
+      margin-top: 40px;
+      @include pad {
+        margin-top: 24px;
+      }
+      @include phone {
+        margin-top: 16px;
+      }
+    }
+    &-share {
+      margin-top: 40px;
+      a {
+        margin-right: 16px;
+      }
+      .icon {
+        width: 24px;
+      }
+      @include phone {
+        display: none;
+      }
+    }
+    @include pad {
+      width: 74.13%;
+    }
+    @include phone {
+      width: 100%;
+      margin-right: 0px;
+      .title {
+        font-size: 24px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+  &-order {
+    width: 66.04%;
+    padding-top: 24px;
+    border-top: 1px solid $gray;
+    margin-top: 16px;
+    .order {
+      gap: 8px;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid $dark;
+      }
+    }
+    @include pad {
+      width: 100%;
+    }
+    @include phone {
+      display: none;
+    }
+  }
+  &-tags {
+    width: 19.75%;
+    @include phone {
+      display: none;
+    }
+  }
+}
+.crumbs {
+  a:hover {
+    color: $primary;
+  }
+}
+.tags {
+  margin-top: 4px;
+  gap: 4px 24px;
+  @include pad {
+    margin-top: 8px;
+    gap: 0px 24px;
+  }
+  &-title {
+    span {
+      @include pad {
+        font-size: 16px;
+      }
+    }
+    .icon {
+      margin-right: 8px;
+      @include pad {
+        margin-right: 0px;
+        font-size: 24px;
+      }
+    }
+  }
+  @include pad {
+    span {
+      font-size: 16px;
+    }
+  }
+}

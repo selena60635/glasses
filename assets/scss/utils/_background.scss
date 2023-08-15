@@ -1,0 +1,23 @@
+.bg {
+  &-primary {
+    background-color: $primary;
+  }
+  &-secondary {
+    background-color: $secondary;
+  }
+  &-tertiary {
+    background-color: $tertiary;
+  }
+  &-light {
+    background-color: $light;
+  }
+  &-dark {
+    background-color: $dark;
+  }
+  &-tint-dark {
+    background-color: $tint-dark;
+  }
+  &-tint-light {
+    background-color: $tint-light;
+  }
+}

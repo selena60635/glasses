@@ -1,0 +1,32 @@
+.faq {
+  padding: 96px 0 80px 0;
+  &-title {
+    border-left: 8px solid $primary-10;
+    padding-left: 16px;
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  &-subtitle {
+    margin-top: 32px;
+  }
+  &-list {
+    margin-top: 24px;
+    width: 66.04%;
+    @include pad {
+      width: 100%;
+    }
+  }
+  &-item:not(:first-child) {
+    margin-top: 32px;
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  .answer {
+    margin-top: 8px;
+  }
+  @include phone {
+    padding: 40px 0 64px 0;
+  }
+}

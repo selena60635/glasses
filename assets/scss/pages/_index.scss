@@ -1,0 +1,261 @@
+.header {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  padding: 296px 0;
+  &-info {
+    text-align: right;
+  }
+  &-btn {
+    margin-top: 4px;
+    a {
+      padding: 5px 12px;
+      display: block;
+      &:hover {
+        background: $light;
+        color: $primary;
+        box-shadow: 2px 2px 0px 0px $primary;
+      }
+    }
+
+    @include phone {
+      margin-top: 8px;
+    }
+  }
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+  @include phone {
+    padding: 144px 0;
+    &-title {
+      font-size: 16px;
+    }
+    &-subtitle {
+      font-size: 24px;
+    }
+  }
+}
+.intro-title,
+.intro-item-title {
+  text-align: center;
+}
+.intro {
+  padding: 80px 0;
+  &-item {
+    width: 23.61%;
+    margin-top: 32.33px;
+    &-title {
+      .icon {
+        vertical-align: middle;
+      }
+      h5 {
+        margin-top: 24.08px;
+      }
+    }
+    p {
+      margin-top: 8px;
+    }
+    @include pad {
+      width: calc((100% - 24px) / 2);
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+    @include phone-s {
+      width: 100%;
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+    &-title {
+      font-size: 24px;
+    }
+  }
+}
+.classic {
+  padding: 80px 0;
+  text-align: center;
+  &-card {
+    margin-top: 48px;
+    @include pad {
+      gap: 24px;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  .card {
+    width: 32.09%;
+    &-title {
+      margin-top: 8px;
+    }
+    @include pad {
+      width: 100%;
+      padding: 0 180px;
+    }
+    @include phone {
+      padding: 0;
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+    &-title {
+      font-size: 24px;
+    }
+  }
+}
+
+.collaborate {
+  padding: 80px 0;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true)
+    left/cover;
+  text-align: center;
+  &-item {
+    width: 50%;
+    @include pad {
+      width: 100%;
+    }
+    @include phone {
+      .img {
+        &-top {
+          content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true);
+        }
+        &-bottom {
+          content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true);
+        }
+      }
+    }
+  }
+  &-menu {
+    margin-top: 48px;
+    @include pad {
+      gap: 24px;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  @include pad {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true)
+      45% 0 / cover;
+  }
+  @include phone {
+    padding: 40px 0;
+    &-title {
+      font-size: 24px;
+    }
+  }
+}
+.suggest {
+  padding: 80px 0;
+  &-title {
+    text-align: center;
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  &-card {
+    margin-top: 48px;
+    .card {
+      width: 23.61%;
+      border-radius: 4px;
+      border: 1px solid #dee2e6;
+      box-shadow: 0px 2px 6px #00000029;
+      &-info {
+        padding: 16px;
+        p:nth-child(2n) {
+          margin-top: 8px;
+        }
+      }
+      &-date {
+        display: block;
+        margin-top: 72px;
+      }
+      @include pad {
+        width: calc((100% - 24px) / 2);
+      }
+      @include phone-s {
+        width: 100%;
+      }
+    }
+    @include pad {
+      gap: 24px;
+    }
+    @include phone {
+      margin-top: 24px;
+      gap: 16px;
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+  }
+}
+.form {
+  width: 49.07%;
+  margin: 0 auto;
+  padding: 80px 0;
+  &-title {
+    text-align: center;
+    @include phone {
+      font-size: 24px;
+    }
+  }
+  .import,
+  textarea {
+    width: 100%;
+    border: 1px solid $dark;
+  }
+  .import {
+    padding: 6px 12px;
+    margin: 8px 0 16px 0;
+    font-size: 16px;
+    &-point:nth-of-type(1) {
+      margin-top: 24px;
+    }
+  }
+  textarea {
+    padding: 6px 12px 106px 12px;
+    margin-top: 8px;
+  }
+  .check {
+    margin-top: 24px;
+    &-box {
+      @include checkbox;
+      margin-right: 8px;
+      @include phone {
+        margin-right: 4px;
+      }
+    }
+    @include phone {
+      margin-top: 16px;
+    }
+  }
+  &-info {
+    margin-top: 48px;
+    @include pad {
+      font-size: 16px;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  &-submit {
+    width: 65.4%;
+    padding: 16px 0;
+    margin: 48px auto 0 auto;
+    display: block;
+    &:hover {
+      background: $tertiary;
+    }
+    @include phone {
+      width: 100%;
+      margin: 24px auto 0 auto;
+    }
+  }
+  @include pad {
+    width: 100%;
+    padding: 80px 60px;
+  }
+  @include phone {
+    padding: 40px 0;
+  }
+}
