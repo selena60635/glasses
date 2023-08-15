@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="data:image/png;base64,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" rel="shortcut icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>系列鏡框-SUNGLASSES</title>
+    <script type="module" crossorigin src="/glasses-website/assets/main-6447fa46.js"></script>
+    <link rel="stylesheet" href="/glasses-website/assets/main-2ec41969.css">
+  </head>
+  <body>
+    <nav class="bg-primary">
+  <div class="navbar container d-f aic jcsb">
+    <h1><a class="navbar-logo" href="index.html">眼鏡官網</a></h1>
+    <ul class="nav d-f fs-20 wrap">
+      <li>
+        <a href="productOptical.html">系列鏡框</a>
+      </li>
+      <li><a href="shop.html">門市據點</a></li>
+      <li><a href="blog.html">部落格</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+    </ul>
+  </div>
+</nav>
+    <nav>
+      <ul class="sort container fw-500 fs-32 d-f jcsb">
+        <li class="sort-btn">
+          <a class="text-dark" href="productOptical.html">OPTICAL</a>
+        </li>
+        <li class="sort-btn">
+          <a
+            style="border-bottom: 8px solid #aa0601"
+            class="text-dark"
+            href="productSunglasses.html"
+            >SUNGLASSES</a
+          >
+        </li>
+        <li class="sort-btn">
+          <a class="text-dark" href="#">FUNCTIONAL</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="d-f">
+      <img
+        class="header-sunglasses-left"
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true"
+        alt="product-header-3"
+      />
+      <img
+        class="header-sunglasses-right"
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true"
+        alt="product-header-2"
+      />
+    </header>
+    <main class="sunglasses">
+      <div class="container">
+        <div class="sunglasses-title">
+          <h4 class="title fs-42 fw-500">2020 NEW COLLECTION</h4>
+          <h4 class="title fs-32">賽璐珞鈦金屬混合鏡框</h4>
+        </div>
+        <ul class="sunglasses-product d-f jcsb wrap">
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true"
+              alt="product-7"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true"
+              alt="product-8"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true"
+              alt="product-9"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true"
+              alt="product-10"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-11.png?raw=true"
+              alt="product-11"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-12.png?raw=true"
+              alt="product-12"
+            />
+            <div class="d-f jcsb">
+              <span class="fs-24">BJ41600S</span>
+              <span class="fs-24 fw-500 text-primary">NTD3,490</span>
+            </div>
+            <div class="d-f">
+              <div class="tint bg-tint-dark"></div>
+              <div class="tint bg-tint-light"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+  <div class="container d-f aic jcc">
+    <button class="pagination-previous" for="first">
+      <a class="text-gray-10 fs-19" href="#">上一頁</a>
+    </button>
+    <input type="radio" id="first" name="pagebtn" />
+    <label class="d-f aic jcc fs-18" for="first">1</label>
+    <input type="radio" id="second" name="pagebtn" checked />
+    <label class="d-f aic jcc fs-18" for="second">2</label>
+    <input type="radio" id="third" name="pagebtn" />
+    <label class="d-f aic jcc fs-18" for="third">3</label>
+    <input type="radio" id="fourth" name="pagebtn" />
+    <label class="d-f aic jcc fs-18" for="fourth">4</label>
+    <input type="radio" id="fifth" name="pagebtn" />
+    <label class="d-f aic jcc fs-18" for="fifth">5</label>
+    <button class="pagination-next" for="first">
+      <a class="text-gray-10 fs-19" href="#">下一頁</a>
+    </button>
+  </div>
+</div>
+    </main>
+    <footer class="footer bg-primary">
+  <div class="container">
+    <div class="footer-info">
+      <div class="d-f jcsb">
+        <ul class="footer-menu d-f aic">
+          <li class="footer-list">
+            <a href="index.html">首頁</a>
+          </li>
+          <li class="footer-list">
+            <a href="productOptical.html">系列鏡框</a>
+          </li>
+          <li class="footer-list">
+            <a href="shop.html">門市據點</a>
+          </li>
+          <li class="footer-list">
+            <a href="blog.html">部落格</a>
+          </li>
+          <li class="footer-list">
+            <a href="faq.html">常見問題</a>
+          </li>
+        </ul>
+        <ul class="footer-icon d-f">
+          <li class="icon">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic-social-fb.png?raw=true"
+                alt="fb"
+            /></a>
+          </li>
+          <li class="icon">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_ig.png?raw=true"
+                alt="ig"
+            /></a>
+          </li>
+          <li class="icon">
+            <a href="https://line.me/zh-hant/" target="_blank"
+              ><img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/ic_social_line.png?raw=true"
+                alt="line"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-contact text-light">
+        <li class="d-f aic">
+          <a href="tel:0800-000-000"
+            ><span class="icon material-symbols-outlined fs-48"> call </span></a
+          >
+          <a class="info fs-36" href="tel:0800-000-000">0800-000-000</a>
+        </li>
+        <li class="d-f aic">
+          <a href="mailto:glasses@business.com"
+            ><span class="icon material-symbols-outlined fs-48"> mail </span></a
+          >
+          <a class="info fs-36" href="mailto:glasses@business.com"
+            >glasses@business.com</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="copyright d-f jcsb aic text-light wrap">
+      <span class="copyright-info"
+        >Copyright © 2020 Glasses.All rights reserved.</span
+      >
+      <div class="fs-14">
+        <span class="copyright-rule">隱私權政策</span>
+        <span class="copyright-rule">服務條款</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
